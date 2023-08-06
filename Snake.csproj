@@ -8,4 +8,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ManagedWinapi" Version="0.3.0" />
+  </ItemGroup>
+
 </Project>
