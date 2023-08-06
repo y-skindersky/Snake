@@ -55,18 +55,24 @@
             // 
             // numericUpDown1
             // 
+            numericUpDown1.InterceptArrowKeys = false;
             numericUpDown1.Location = new Point(68, 7);
             numericUpDown1.Name = "numericUpDown1";
+            numericUpDown1.ReadOnly = true;
             numericUpDown1.Size = new Size(150, 27);
             numericUpDown1.TabIndex = 1;
+            numericUpDown1.TabStop = false;
             numericUpDown1.Value = new decimal(new int[] { 5, 0, 0, 0 });
             // 
             // numericUpDown2
             // 
+            numericUpDown2.InterceptArrowKeys = false;
             numericUpDown2.Location = new Point(68, 45);
             numericUpDown2.Name = "numericUpDown2";
+            numericUpDown2.ReadOnly = true;
             numericUpDown2.Size = new Size(150, 27);
             numericUpDown2.TabIndex = 2;
+            numericUpDown2.TabStop = false;
             numericUpDown2.Value = new decimal(new int[] { 5, 0, 0, 0 });
             // 
             // label1
@@ -115,14 +121,18 @@
             // 
             // numericUpDown3
             // 
+            numericUpDown3.InterceptArrowKeys = false;
             numericUpDown3.Location = new Point(344, 7);
             numericUpDown3.Name = "numericUpDown3";
+            numericUpDown3.ReadOnly = true;
             numericUpDown3.Size = new Size(150, 27);
             numericUpDown3.TabIndex = 7;
+            numericUpDown3.TabStop = false;
             numericUpDown3.Value = new decimal(new int[] { 40, 0, 0, 0 });
             // 
             // Form1
             // 
+            AcceptButton = button1;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(827, 582);

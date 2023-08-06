@@ -33,7 +33,7 @@ namespace Snake
             var g = pictureBox1.CreateGraphics();
 
             g.FillRectangle(Brushes.AliceBlue, new Rectangle(
-                (snake.Tail.x -1) * px + 1, (snake.Tail.y - 1) * px + 1, px - 2, px - 2)); 
+                (snake.Tail.x - 1) * px + 1, (snake.Tail.y - 1) * px + 1, px - 2, px - 2));
             snake.Move();
 
             DrawSnake(snake, g, px);
@@ -56,6 +56,11 @@ namespace Snake
 
         protected override void OnKeyDown(KeyEventArgs e)
         {
+            if (snake == null)
+            {
+                return;
+            }
+
             switch (e.KeyCode)
             {
                 case Keys.Up:
@@ -183,7 +188,7 @@ namespace Snake
         public void TurnRight()
         {
             movX = 1;
-            movY =0 ;
+            movY = 0;
         }
     }
 }
